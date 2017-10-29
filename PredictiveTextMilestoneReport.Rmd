@@ -1,0 +1,47 @@
+---
+title: "Predictive Text - Milestone Report"
+author: "Natalie Phillips"
+date: "29 October 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Capstone Project for Data Science Specialization
+
+## First Milestone Report
+
+Text prediction is an often seen feature on our mobile phones and in our web browsers. Text prediction can assist us to type faster on our phones and correct our spelling when we make a mistake. SwiftKey our partner in this Capstone project boast over over 250 million users of their keyboard for mobile phones.
+
+## Corpora to train our own models
+
+We have been provided with a number of text corpus to develop and train our own text prediction Model. The corpus cover a number of languages:
+
+* English
+* German
+* Russian
+* Finnish
+
+and a number of sources:
+
+* Twitter
+* news
+* blogs.
+
+I have downloaded the text corpus and started examining with the English language files.
+
+## English text examples
+
+The text examples vary in size in both number of entries and length of the entries. This is not surprising given that Twitter has historically had a character limit of 140.  The text files have the following specifications:
+
+```{r echo=FALSE}
+load(file = "..\\..\\Data\\filesDF.RData")
+library(knitr)
+```
+
+```{r echo = FALSE, results='asis'}
+kable(filesDF, caption = "Size of English text corpus")
+```
+
